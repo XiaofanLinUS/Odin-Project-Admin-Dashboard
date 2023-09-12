@@ -8,7 +8,10 @@
 }
 
 .sidebar {
+  background-color: #0ea5e9;
   border: 1px solid black;
+
+  padding: 10px;
 
   grid-column: 1 / 2;
   grid-row: 1 / -1;
@@ -18,6 +21,21 @@
   gap: 20px;
 }
 
+.sidebar > .logo {
+  display: flex;
+  align-items: center;
+}
+.sidebar > .logo img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+.sidebar > .logo h1 {
+  margin: 0;
+  display: inline-block;
+}
 .header {
   padding: 10px 20px;
   border: 1px solid black;
@@ -61,4 +79,50 @@
   width: 100px;
   height: 100px;
   border: 1px solid black;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+.main-content > .project {
+  border: 1px solid black;
+
+  padding: 10px;
+}
+
+.main-content > .other {
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-content > .project > .project-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+
+  border: 1px solid black;
+}
+
+.main-content > .project > .project-summary article {
+  border: 1px solid black;
+}
+
+.main-content > .other > .trending > .info {
+  display: flex;
+  align-items: center;
+}
+
+.main-content > .other > .trending > .info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.main-content > .other > .trending > .info div * {
+  margin: 0;
 }
