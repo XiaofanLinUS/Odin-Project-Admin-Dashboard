@@ -1,0 +1,24 @@
+.sidebar {
+  background-color: #1992d3;
+  color: white;
+}
+
+.main-content {
+  background-color: #e2e8f0;
+}
+
+.header {
+  background-color: white;
+}
+
+.project-summary .info,
+.announcement .card,
+.trending .card {
+  background-color: white;
+}
+
+.project-summary .info p,
+.announcement .info p,
+.trending .info p {
+  color: #888;
+}
