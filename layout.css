@@ -14,12 +14,8 @@ body {
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 4fr;
   grid-auto-flow: column;
-
-  border: 1px solid black;
 }
 .sidebar {
-  border: 1px solid black;
-
   padding: 10px;
 
   grid-column: 1 / 2;
@@ -65,13 +61,11 @@ body {
 }
 .header {
   padding: 10px 20px;
-  border: 1px solid black;
 
   grid-column: 2/ 3;
 }
 
 .header > .first {
-  border: 1px solid black;
   display: flex;
 }
 
@@ -88,12 +82,12 @@ body {
 
 .header .search > input[type="text"] {
   width: 50%;
+  height: 25px;
 }
 
 .header > .second {
-  border: 1px solid black;
   display: grid;
-  gap: 50px;
+  gap: 30px;
   grid-template-columns: 1fr auto auto auto;
   align-items: center;
 }
@@ -105,7 +99,6 @@ body {
 .header .second .user .icon {
   width: 100px;
   height: 100px;
-  border: 1px solid black;
 }
 
 .main-content {
@@ -115,28 +108,19 @@ body {
 }
 
 .main-content > .project {
-  border: 1px solid black;
-
   padding: 10px;
 }
 
 .main-content > .other {
-  border: 1px solid black;
-
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
 }
 .main-content > .project > .project-summary {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   gap: 50px;
-
-  border: 1px solid black;
-}
-
-.main-content > .project > .project-summary article {
-  border: 1px solid black;
 }
 
 .main-content > .other > .trending .info {
@@ -156,13 +140,13 @@ body {
 }
 
 .main-content {
-  padding: 10px;
+  padding: 20px;
 }
 
 .project-summary .info,
 .announcement .card,
 .trending .card {
-  border-radius: 5%;
+  border-radius: 15px;
 }
 
 .announcement .card {
@@ -182,14 +166,117 @@ body {
 .announcement .card .info h4 {
   margin: 0;
 }
-/* font-size */
 
 .sidebar {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .sidebar ul li {
   font-size: 1.2rem;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.header input[type="text"] {
+  border-radius: 100px;
+  background-color: #e2e8f0;
+  border: none;
+}
+
+.header {
+  padding: 25px 20px;
+}
+
+.header p {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+.header h2 {
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.first img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.first .avatar {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+.second .avatar {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
+}
+.first {
+  align-items: center;
+}
+
+.second button {
+  color: white;
+  background-color: #1992d3;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+}
+
+.second button:hover {
+  cursor: pointer;
+}
+
+.header {
+  box-shadow: 5px 5px 10px rgba(0.1, 0.1, 0.1, 0.5);
+  margin-bottom: 10px;
+}
+
+.project-summary article.info {
+  padding: 10px;
+  border-left: 11px solid #f0b329;
+}
+
+.project-summary article.info ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.project-summary article.info ul img {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.announcement p {
+  font-size: 0.8rem;
+}
+
+.announcement h4 {
+  font-size: 0.9rem;
+}
+
+.trending > .card {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.trending > .card > div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.trending > .card > .info img {
+  margin: 5px 10px;
 }
